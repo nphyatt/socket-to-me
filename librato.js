@@ -17,7 +17,7 @@ function init(email, token) {
 }
 
 const src = {source: 'load_testing'};
-const prefix = 'ionic_api_db.nicks_socket_smasher.';
+const prefix = 'socket_to_me.';
 function measure(metric, value){
   metric = prefix + metric;
   librato.measure(metric, value, src);
