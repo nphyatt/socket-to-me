@@ -1,0 +1,35 @@
+{
+  "name": "socket-to-me",
+  "version": "1.0.0",
+  "description": "WebSocket load testing utility",
+  "main": "bin/sockme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nphyatt/socket-to-me.git"
+  },
+  "keywords": [
+    "WebSocket",
+    "benchmark",
+    "load"
+  ],
+  "author": "Nicholas Hyatt <nick@ionic.io>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "0.2.x",
+    "colors": "0.6.x",
+    "commander": "1.1.x",
+    "librato-node": "^4.1.0",
+    "tab": "0.1.x",
+    "sugar": "1.3.8",
+    "ws": "1.1.x"
+  },
+  "bin": {
+    "sockme": "./bin/sockme.js"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1"
+  }
+}
