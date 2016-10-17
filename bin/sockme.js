@@ -31,6 +31,7 @@ cli.usage('[options] ws://localhost')
    .option('-G, --generator <file>', 'custom message generators')
    .option('-U, --user <librato-user>', 'email for librato account')
    .option('-T, --token <librato-token>', 'token for librato account')
+   .option('-L, --nolive <no-live>', 'no live output')
    .option('-P, --protocol <protocol>', 'name of websocket protocol', parseProtocol, {perMessageDeflate: false})
    .version(require('../package.json').version)
    .parse(process.argv);
@@ -278,7 +279,9 @@ async.forEach(cli.args, function forEach(url, done) {
 
 // We are setup, everything is running
 console.log('');
-live();
+if (!cli.nolive){
+  live();
+}
 
 function finish(){
   live.stop();
