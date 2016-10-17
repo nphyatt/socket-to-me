@@ -1,6 +1,6 @@
 {
   "name": "socket-to-me",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "WebSocket load testing utility",
   "main": "bin/sockme.js",
   "scripts": {
